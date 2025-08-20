@@ -1,0 +1,12 @@
+<div class="job-container">
+  <h2>Applied Jobs</h2>
+  <div class="applied-jobs">
+    <ul>
+      @for (job of jobsService.appliedJobs(); track job.company) {
+      <li>
+        <app-jobs-item [job]="job" />
+      </li>
+      }
+    </ul>
+  </div>
+</div>

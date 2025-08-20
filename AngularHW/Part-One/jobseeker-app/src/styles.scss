@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Poetsen+One&family=Roboto:ital,wght@1,100..900&display=swap');
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #9cc18e;
+  margin: 0;
+}
+
+
+.job-container {
+  background-color: #e6ecde;
+  border-radius: 4px;
+  margin: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}

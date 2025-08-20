@@ -1,0 +1,25 @@
+<div class="job-container">
+  <div class="job-item">
+    <h2>{{ job.company }} - {{ job.position }}</h2>
+    <p>Starting Salary: {{ job.startingSalary }}</p>
+    <p>Work Type: {{ job.workType }}</p>
+
+    <button (click)="jobDetails()">
+      {{ expanded ? "Hide Details" : "Show Details" }}
+    </button>
+
+    @if (!job.isApplied) {
+    <button (click)="applyJob()">Apply</button>
+    } @if (job.isApplied) {
+    <button (click)="cancelApplication()">Cancel</button>
+    } @if (expanded) {
+
+    <div class="job-details">
+      <p>{{ job.description }}</p>
+      <p>Location: {{ job.location }}, {{ job.country }}</p>
+      <p>Qualifications: {{ job.qualifications }}</p>
+      <p>Expires: {{ job.expires }}</p>
+    </div>
+    }
+  </div>
+</div>
