@@ -1,0 +1,5 @@
+<div class="profiles-container">
+  @for (profile of profiles(); track profile.id) {
+  <app-profile [profile]="profile" />
+  }
+</div>

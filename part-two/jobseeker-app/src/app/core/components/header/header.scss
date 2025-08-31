@@ -1,0 +1,39 @@
+.header {
+  background-color: #e6ecde;
+  border-bottom: 2px solid black;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+
+  .logo {
+    margin-left: 50px;
+
+    img {
+      height: 120px;
+      cursor: pointer;
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+    }
+
+    li {
+      font-size: 23px;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    a {
+      color: black;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    a:hover {
+      font-size: 30px;
+    }
+  }
+}

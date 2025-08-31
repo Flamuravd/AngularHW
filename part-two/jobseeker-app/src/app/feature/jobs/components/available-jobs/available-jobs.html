@@ -1,0 +1,14 @@
+<div class="job-container">
+  <input type="text" placeholder="Search Jobs..." [(ngModel)]="searchText" />
+  <h2>Available Jobs:</h2>
+  <div class="available-jobs">
+    <ul>
+      @for (job of jobsService.availableJobs() | filterJobs: searchText; track
+      $index) {
+      <li>
+        <app-jobs-item [job]="job" />
+      </li>
+      }
+    </ul>
+  </div>
+</div>

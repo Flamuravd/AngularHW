@@ -1,0 +1,20 @@
+<div class="profile">
+  <div class="profile-header">
+    <div class="profile-id">{{ profile().id }}</div>
+    <div class="profile-name">{{ profile().name | uppercase }}</div>
+    <div class="profile-email">{{ profile().email }}</div>
+  </div>
+
+  <div class="profile-details">
+    <h3>Personal Details:</h3>
+    <div class="details-item">
+      <p>Phone: {{ profile().phone }}</p>
+      <p>Birthdate: {{ profile().dateOfBirth | date }}</p>
+    </div>
+
+    <div class="details-item">
+      <p>Work Experience: {{ profile().workExperience }}</p>
+      <p>Current Work Status: {{ profile().currentWorkStatus }}</p>
+    </div>
+  </div>
+</div>

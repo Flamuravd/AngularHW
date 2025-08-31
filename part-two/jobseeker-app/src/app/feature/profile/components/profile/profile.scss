@@ -1,0 +1,50 @@
+.profile {
+  background-color: white;
+  width: 90%;                    
+  margin: 20px auto;
+  padding: 25px 30px;      
+  border-radius: 12px;
+
+  .profile-header {
+    margin-bottom: 25px;
+
+    .profile-id {
+      font-size: 25px;
+      font-weight: bold;
+      color: red;
+      margin-bottom: 10px;
+    }
+
+    .profile-name {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .profile-email {
+      color: gray;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .profile-details {
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+
+    h3 {
+      font-size: 30px;
+      margin-bottom: 12px;
+      color: black;
+    }
+
+    .details-item {
+      margin-bottom: 15px;
+
+      p {
+        margin: 6px 0;
+        font-size: 20px;
+      }
+    }
+  }
+}
